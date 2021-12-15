@@ -4,7 +4,7 @@ hostname = api.textnow.me, *.videostarapp.com, avatar-nct.nixcdn.com, spclient.w
 ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 
 #nomo
-^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/NOMO.js
+^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/nomo.js
 
 #gyroscope
 ^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/Gyroscope.vip.js
