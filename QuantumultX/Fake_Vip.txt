@@ -1,4 +1,20 @@
-hostname = api.textnow.me, *.videostarapp.com, avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, api.revenuecat.com, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.c*, api.meiease.c*, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com:0, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com, receipts.cerebralgardens.com, api-kinemaster-assetstore.*, api.pushover.net, api-cs.intsig.net, api.overhq.com, api.appsyscode.com, api.freeletics.com, api.shred.app, receipt-validator.herewetest.com, api.deezer.com, iap.aps-sdk.com, education.github.com, backend.getdrafts.com, ssl-api.itranslateapp.com, sk.ulysses.app, dayone.me, license.enpass.io, mp.bybutter.com, *.grammarly.com, splice.oracle.*.com, api.keepkeep.com, planner5d.com, secure.istreamer.com, www.api.monkeyuni.net, account.wps.com, menscoach-api.asqq.io, nomo.dafork.com
+hostname = api.textnow.me, *.videostarapp.com, avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, api.revenuecat.com, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.c*, api.meiease.c*, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com:0, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com, receipts.cerebralgardens.com, api-kinemaster-assetstore.*, api.pushover.net, api-cs.intsig.net, api.overhq.com, api.appsyscode.com, api.freeletics.com, api.shred.app, receipt-validator.herewetest.com, api.deezer.com, iap.aps-sdk.com, education.github.com, backend.getdrafts.com, ssl-api.itranslateapp.com, sk.ulysses.app, dayone.me, license.enpass.io, mp.bybutter.com, *.grammarly.com, splice.oracle.*.com, api.keepkeep.com, planner5d.com, secure.istreamer.com, www.api.monkeyuni.net, account.wps.com, menscoach-api.asqq.io, nomo.dafork.com, mb3admin.com, p.du.163.com, lcs-mobile-cops.adobe.io,createpdf.acrobat.com, buy.itunes.apple.com, api.revenuecat.com, notability.com
+
+
+# Notability
+https://notability.com/subscriptions url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/notability.js
+
+# Darkroom
+https://api.revenuecat.com/v1/(receipts|subscribers)/* url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/darkroom.js
+
+# Clean VPN 
+^https:\/\/buy.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/cleanVpn.js
+
+# Emby
+^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) url script-echo-response https://raw.githubusercontent.com/zlking02/Emby/main/Script/embycrack.js
+
+# Neteasy Reading
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/Wnds.js
 
 #nomo
 ^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/nomo.js
@@ -72,8 +88,11 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 #remove_manage
 ^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
 
-#lightroom
-^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/Lightroom.js
+# Adobe Photoshop, Adobe Illustrator, Adobe Lightroom, Premiere Rush, Adobe Express, Spark Page, Spark Video, Adobe Fresco
+https://lcs-mobile-cops.adobe.io/mobile_profile/nul/v2 url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/adobe.js
+
+# Adobe Scan, Adobe Acrobat
+https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/adobeScanPdf.js
 
 #Pdfexpert
 ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/Pdfexpert.vip.js
@@ -143,9 +162,6 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 
 #draft
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/draft.js
-
-#phothop&PSexpress
-^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/photoshop.js
 
 #itranslate&lingo&voice&converse
 ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/itranslate.js
