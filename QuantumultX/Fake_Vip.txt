@@ -13,7 +13,7 @@ https://notability.com/subscriptions url script-response-body https://raw.github
 https://api.revenuecat.com/v1/(receipts|subscribers)/* url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/darkroom.js
 
 # Clean VPN 
-^https:\/\/buy.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/cleanVpn.js
+https://buy.itunes.apple.com/verifyReceipt url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/cleanVpn.js
 
 # Emby
 ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) url script-echo-response https://raw.githubusercontent.com/zlking02/Emby/main/Script/embycrack.js
@@ -172,12 +172,12 @@ https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-re
 ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/itranslate.js
 
 #ulysses
-;^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
+^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
 
-;^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/ulysses.js
+^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/ulysses.js
 
 #pre_dayone
-;^https:\/\/dayone\.me\/api\/users$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
+^https:\/\/dayone\.me\/api\/users$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
 
 #dayone
 ^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/dayone.js
@@ -186,7 +186,7 @@ https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-re
 ^https:\/\/api-production\.endel\.io\/.*\/user$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/endel.js
 
 #shred
-;^https:\/\/api\.shred\.app\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/shred.js
+^https:\/\/api\.shred\.app\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/shred.js
 
 #nichi
 ^https?:\/\/mp\.bybutter\.com\/mood\/(official-templates|privileges) url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/nichi.js
@@ -201,7 +201,7 @@ https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-re
 ^https:\/\/planner5d\.com\/api\/sets url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/planner5d.js
 
 #playerxtreme
-;^https:\/\/secure\.istreamer\.com\/backend$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
+^https:\/\/secure\.istreamer\.com\/backend$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
 
 ^https:\/\/secure\.istreamer\.com\/backend$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/playerxtreme.js
 
@@ -209,7 +209,7 @@ https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-re
 ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/monkey.js
 
 ##wps makexp
-;^https:\/\/account\.wps\.com/\api\/users\/.+ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/wps.js
+^https:\/\/account\.wps\.com/\api\/users\/.+ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/wps.js
 
 #VideoStar
 ^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/VideoStar.js
