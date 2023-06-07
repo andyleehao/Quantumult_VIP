@@ -219,3 +219,6 @@ https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-re
 
 #Muscle Booster
 ^https:\/\/menscoach-api\.asqq\.io\/prod\/user$ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/MuscleBooster.js
+
+# Adobe Lightroom
+https://yfamily.ml/rewrite/lightroom.conf
