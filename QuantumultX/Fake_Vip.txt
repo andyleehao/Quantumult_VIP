@@ -191,9 +191,6 @@ https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-re
 #all apps monkey
 ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/monkey.js
 
-##wps makexp
-^https:\/\/account\.wps\.com/\api\/users\/.+ url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/wps.js
-
 #VideoStar
 ^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/andyleehao/VN-langkhach270389/master/VideoStar.js
 
